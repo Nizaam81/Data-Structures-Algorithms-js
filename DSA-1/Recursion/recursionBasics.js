@@ -8,7 +8,7 @@ function sum(n) {
 }
 console.log("Sum of 5:", sum(5)); 
 
-// ------------------------------------------------------
+
 
 // Factorial of a number using recursion
 function factorial(n) {
@@ -20,7 +20,7 @@ function factorial(n) {
 }
 console.log("Factorial of 5:", factorial(5));
 
-// ------------------------------------------------------
+
 
 // Count number of digits in a number using recursion
 function countDigits(n) {
@@ -32,7 +32,7 @@ function countDigits(n) {
 }
 console.log("Digits in 1000:", countDigits(1000)); 
 
-// ------------------------------------------------------
+
 
 // Print numbers from n to 1 (descending order)
 function printDescending(n = 5) {
@@ -47,7 +47,7 @@ function printDescending(n = 5) {
 }
 printDescending(); 
 
-// ------------------------------------------------------
+
 
 //   Print numbers from 1 to n (ascending order)
 function printAscending(n = 1) {
@@ -63,7 +63,7 @@ function printAscending(n = 1) {
 printAscending(); 
 
 
-// ------------------------------------------------------
+
 
 //Sum of array using Recursion 
 
@@ -74,7 +74,7 @@ function sum(arr) {
 }
 console.log(sum([1, 2, 3, 4, 5]));
 
-// ------------------------------------------------------
+
 
 // Remove From first char  in the string using recursion 
 
@@ -87,7 +87,7 @@ function removeFirstChar(str) {
 console.log(removeFirstChar("nizam")); 
 
 
-// ------------------------------------------------------
+
 
 
 // Remove the last letter of index using recursion
@@ -100,7 +100,7 @@ function removeLasttChar(str) {
 console.log(removeFirstChar("nizam")); 
 
 
-// ------------------------------------------------------
+
 
 // Reverse a string  using Recursion
 
@@ -109,3 +109,17 @@ function reverse(str) {
   return reverse(str.slice(1)) + str[0];
 }
 console.log(reverse("nizam"));
+
+
+// Write a recursive function to check is palindrome or not 
+
+function isPalindrome(str) {
+  if (str.length <= 1) return true;
+
+  if (str[0] !== str[str.length - 1]) return false;
+
+  return pal(str.slice(1, -1));
+}
+
+console.log(isPalindrome("nizam"));
+console.log(isPalindrome("madam"));   
