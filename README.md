@@ -7,45 +7,46 @@ This repository contains clean, well-structured JavaScript implementations of es
 ## 📁 Folder Structure
 
 DSA-1/
-├── Linked-Lists/
-├── MathAlgorithms/
-├── Recursion/
-├── Searching/
+├── Linked-Lists/  
+├── MathAlgorithms/  
+├── Recursion/  
+├── Searching/  
 
 DSA-2/
-├── DataStructures/
-│ ├── Stack/
-│ ├── Queue/
-│ ├── StackUsingQueue/
-├── Sorting/
-│ ├── BubbleSort.js
-│ ├── InsertionSort.js
-│ ├── SelectionSort.js
-│ ├── MergeSort.js
-│ ├── QuickSort.js
-│ ├── HeapSort.js
+├── DataStructures/  
+│   ├── Stack/  
+│   ├── Queue/  
+│   ├── StackUsingQueue/  
+├── Sorting/  
+│   ├── BubbleSort.js  
+│   ├── InsertionSort.js  
+│   ├── SelectionSort.js  
+│   ├── MergeSort.js  
+│   ├── QuickSort.js  
+│   ├── HeapSort.js  
 
 DSA-3/
-├── Graph/
-│ ├── Graph_BFS.js
-│ ├── Graph_DFS.js
-├── Heap/
-│ ├── minHeap.js
-│ ├── maxHeap.js
-│ ├── heapInsert.js
-│ ├── heapRemove.js
-│ ├── heapSort.js
-├── Tree/
-│ ├── BinarySearchTree.js
-│ ├── DFS/
-│ │ ├── preOrder.js
-│ │ ├── inOrder.js
-│ │ ├── postOrder.js
-│ ├── BFS/
-├── Trie/
-│ ├── trie.js
-│ ├── autocompleteTrie.js
-│ ├── longestPrefix.js
+├── Graph/  
+│   ├── Graph_BFS.js  
+│   ├── Graph_DFS.js  
+├── Heap/  
+│   ├── minHeap.js  
+│   ├── maxHeap.js  
+│   ├── heapInsert.js  
+│   ├── heapRemove.js  
+│   ├── heapSort.js  
+├── Tree/  
+│   ├── BinarySearchTree.js  
+│   ├── DFS/  
+│   │   ├── preOrder.js  
+│   │   ├── inOrder.js  
+│   │   ├── postOrder.js  
+│   ├── BFS/  
+├── Trie/  
+│   ├── trie.js  
+│   ├── autocompleteTrie.js  
+│   ├── longestPrefix.js  
+
 
 
  
