@@ -1,11 +1,11 @@
-// ✅ HashTable using Linear Probing (No 'get' method included)
+//   HashTable using Linear Probing (No 'get' method included)
 class HashTable {
   constructor(size) {
     this.size = size;
     this.table = new Array(size);
   }
 
-  // 🔑 Simple hash function
+  //  Simple hash function
   hash(key) {
     let total = 0;
     for (let i = 0; i < key.length; i++) {
@@ -54,7 +54,7 @@ class HashTable {
 
   //  Display all key-value pairs
   display() {
-    console.log("Hash Table:");
+   
     for (let i = 0; i < this.size; i++) {
       console.log(i, ":", this.table[i]);
     }

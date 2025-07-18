@@ -7,6 +7,7 @@
 // 3. Recursively apply Quick Sort to the left and right arrays.
 // 4. Combine sorted left, pivot, and sorted right to form final sorted array.
 
+
 function quickSort(arr) {
   // Base case: array with 0 or 1 element is already sorted
   if (arr.length < 2) return arr;

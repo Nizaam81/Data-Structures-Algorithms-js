@@ -18,7 +18,7 @@ class HashTable {
     return total % this.capacity;
   }
 
-  // ➕ Insert or update key-value pair
+  //  Insert or update key-value pair
   set(key, value) {
     //  Rehash if load factor exceeds threshold
     if (this.size / this.capacity >= this.loadFactor) {
