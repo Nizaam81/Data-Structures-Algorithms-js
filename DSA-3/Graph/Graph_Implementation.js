@@ -39,13 +39,13 @@ class Graph {
 
   // Remove a vertex and all edges connected to it
   removeVertex(vertex) {
-    if (!this.adjacencyList[vertex]) return;
+    if (!this.adjecency[vertex]) return null;
 
-    for (let adjacentVertex of this.adjacencyList[vertex]) {
-      this.removeEdge(vertex, adjacentVertex);
+    for (let adjecent of this.adjecency[vertex]) {
+      this.removeEdges(vertex, adjecent);
     }
 
-    delete this.adjacencyList[vertex];
+    delete this.adjecency[vertex];
   }
 
   // Display the graph

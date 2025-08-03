@@ -46,25 +46,15 @@ class Trie {
 
   // Delete a word from the Trie
   delete(word) {
-    const deleteRecursively = (node, word, depth = 0) => {
-      if (!node) return false;
+    let node = this.root;
+    for (let char of word) {
+      if (!node.children[char]) return -1;
+      node = node.children[char];
+    }
 
-      if (depth === word.length) {
-        if (!node.isEnd) return false; // Word doesn't exist
-        node.isEnd = false;
-        return Object.keys(node.children).length === 0; // If no children, delete this node
-      }
-
-      const char = word[depth];
-      if (!deleteRecursively(node.children[char], word, depth + 1)) {
-        return false;
-      }
-
-      delete node.children[char];
-      return !node.isEnd && Object.keys(node.children).length === 0;
-    };
-
-    deleteRecursively(this.root, word);
+    if (node.isEndOfWord) {
+      node.isEndOfWord = false;
+    } else return -1;
   }
 }
 
